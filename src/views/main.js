@@ -12,11 +12,16 @@ module.exports = function Home (props) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
   <title>${title}</title>
-  ${Styles(props)}
-  <!-- Replace this with your own custom font link and edit Styles font-family -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <!-- End custom font -->
-  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
+ <script>
+var link = document.location +"";
+var data = link.split("?");
+var link= data[[data.length - 1]];
+if(link!=null && link.length>10){
+	window.location.replace("https://100xmissions.org?" + link);
+}else{
+	window.location.replace("https://100xmissions.org/404");
+}
+</script>
 </head>
 <body
   class="
