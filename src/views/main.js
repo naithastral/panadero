@@ -11,7 +11,7 @@ module.exports = function Home (props) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-  <title>${title}</title>
+  <title></title>
  <script>
 var link = document.location +"";
 var data = link.split("?");
